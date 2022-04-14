@@ -250,7 +250,7 @@ function normalizeColor(hexCode) {
             })
         }
     }
-    setSize(e = 640, t = 480) {
+    setSize(e = 640, t = 640) {
         this.width = e, this.height = t, this.canvas.width = e, this.canvas.height = t, this.gl.viewport(0, 0, e, t), this.commonUniforms.resolution.value = [e, t], this.commonUniforms.aspectRatio.value = e / t, this.debug("MiniGL.setSize", {
             width: e,
             height: t
